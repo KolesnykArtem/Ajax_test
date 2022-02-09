@@ -3,7 +3,6 @@ def deletes(file_name):
     all_file = open(file_name, 'r')
     for line in all_file:
         if 'HUB' in line:
-            line.strip()
             line = line.replace(' ','')
             out_line = out_line + line
     all_file.close()
